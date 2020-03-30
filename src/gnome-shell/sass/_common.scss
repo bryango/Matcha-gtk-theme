@@ -285,109 +285,7 @@ StScrollBar {
 }
 
 /* Popovers/Menus */
-
-.popup-menu {
-  min-width: 15em;
-  color: $fg_color;
-  border-image: url("assets/menu.svg") 18 18 18 18;
-
-  // .popup-menu-arrow { } //defined globally in the TOP BAR
-
-  .popup-sub-menu {
-    background: none;
-    box-shadow: none;
-    border-image: url("assets/submenu.svg") 18 18 2 2;
-  }
-
-  .popup-menu-content {
-    padding: 1em 0;
-  }
-
-  .popup-menu-item {
-    spacing: 12px;
-    padding: 6px;
-    transition-duration: 0s;
-
-    &:ltr { padding-right:1.75em; padding-left: 0; }
-    &:rtl { padding-right: 0; padding-left:1.75em; }
-
-    &:checked {
-      font-weight: normal;
-      background: none;
-      box-shadow: none;
-      border-image: url("assets/submenu-open.svg") 18 18 2 2;
-
-      &:active, &.selected {
-        color: $selected_fg_color;
-        background-color: $selected_bg_color;
-        // border-image: url("assets/menu-hover.svg") 18 18 2 2;
-      }
-
-      &:insensitive {
-        color: $insensitive_selected_fg_color;
-        background: none;
-      }
-    }
-
-    &:hover, &:active, &.selected {
-      color: $selected_fg_color;
-      background-color: $selected_bg_color;
-      // border-image: url("assets/menu-hover.svg") 18 18 2 2;
-    }
-
-    &:insensitive { color: $insensitive_fg_color; }
-  }
-
-  .popup-inactive-menu-item { //all icons and other graphical elements
-    color: $fg_color;
-
-    &:insensitive { color: $tertiary_fg_color; }
-  }
-
-  //.popup-status-menu-item { font-weight: normal;  color: pink; } //dunno what that is
-  &.panel-menu {
-    -boxpointer-gap: 4px;
-    margin-bottom: 1.75em;
-  }
-}
-
-.popup-menu-ornament {
-  text-align: right;
-  width: 16px;
-  height: 16px;
-}
-
-.popup-menu-boxpointer {
-  -arrow-border-radius: 2px;
-  -arrow-background-color: transparent;
-  -arrow-border-width: 1px;
-  -arrow-border-color: transparent;
-  -arrow-base: 0;
-  -arrow-rise: 0;
-  border: 0 none transparent;
-
-  StEntry, .search-entry {
-    caret-color: $fg_color;
-  }
-}
-
-.candidate-popup-boxpointer {
-  -arrow-border-radius: 2px;
-  -arrow-background-color: transparent;
-  -arrow-border-width: 1px;
-  -arrow-border-color: transparent;
-  -arrow-base: 0;
-  -arrow-rise: 0;
-  border: 0 none transparent;
-  background: transparent; // needs to reset?
-  color: $fg_color;
-  border-image: url("assets/menu.svg") 18 18 18 18;
-
-  .candidate-popup-content {
-    margin: 6px;
-  }
-}
-
+// minimal separator
 .popup-separator-menu-item {
   background: none;
   border: none;
@@ -404,17 +302,6 @@ StScrollBar {
       margin: 0 40px 0 0;
     }
   }
-}
-
-// a little unstructured mess:
-
-.system-switch-user-submenu-icon.user-icon {
-  icon-size: 20px;
-  padding: 0 2px;
-}
-.system-switch-user-submenu-icon.default-icon {
-  icon-size: 16px;
-  padding: 0 4px;
 }
 
 #appMenu {
