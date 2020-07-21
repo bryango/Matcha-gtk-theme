@@ -265,25 +265,6 @@ StScrollBar {
 }
 
 /* Popovers/Menus */
-// minimal separator
-.popup-separator-menu-item {
-  background: none;
-  border: none;
-  padding: 0;
-
-  .popup-separator-menu-item-separator {
-    height: 1px;
-    background-color: $borders_color;
-    padding: 0 0;
-    margin: 0 40px;
-
-    .popup-sub-menu & { //submenu separators
-      padding: 0 0;
-      margin: 0 40px 0 0;
-    }
-  }
-}
-
 #appMenu {
   spinner-image: url("process-working.svg");
   spacing: 4px;
